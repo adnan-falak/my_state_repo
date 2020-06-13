@@ -39,4 +39,4 @@ jobs:
     
     # Deploy Surge
     - name: Run surge
-      run: surge ./build react-state-project05.surge.sh --token ${{ secrets.MY_STATE }}
+      run: surge ./my_state_repo react-state-project05.surge.sh --token ${{ secrets.MY_STATE }}
