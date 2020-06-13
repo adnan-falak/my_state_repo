@@ -36,7 +36,7 @@ jobs:
     # Install Surge
     - name: Install Surge
       run: npm install --global surge
-    
+     
     # Deploy Surge
-    - name: Run surge
-      run: surge ./my_state_repo react-state-project05.surge.sh --token ${{ secrets.MY_STATE }}
+    - name: Deploy React App to Surge
+      run: surge ./build zeeshan-reactstate.surge.sh --token ${{ secrets.MY_STATE }}
