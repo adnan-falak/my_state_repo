@@ -30,8 +30,8 @@ jobs:
       with:
         cmd: install
         
-    - name: Build React App
-      run: yarn build
+    - name: Build Yarn and npm
+      uses: linchpin/action-build-yarn-npm@master
       
     # Install Surge
     - name: Install Surge
